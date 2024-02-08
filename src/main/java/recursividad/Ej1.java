@@ -20,7 +20,7 @@ public class Ej1 {
         array[2]=5;
         array[3]=7;
         array[4]=8;
-//        imprimirArray(array, contador);
+        imprimirArray(array, contador);
         System.out.println(sumarArray(array, contador));
     }
     public static void imprimirArray(int[] array, int contador){
