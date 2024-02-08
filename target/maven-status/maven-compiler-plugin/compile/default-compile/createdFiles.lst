@@ -1,6 +1,4 @@
-com\mycompany\tema6aiman\Tema6Aiman.class
-recursividad\Ej1.class
-composicion\Museo.class
-composicion\Main.class
-composicion\Director.class
-composicion\ObraDeArte.class
+herencia/Turismo.class
+herencia/Main.class
+recursividad/Polidromo.class
+herencia/Vehiculo.class
