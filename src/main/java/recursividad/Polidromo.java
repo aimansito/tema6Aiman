@@ -11,15 +11,15 @@ package recursividad;
 public class Polidromo {
     public static void main(String[] args) {
         String palabra = "kayak";
-        palabraPolindroma(palabra);
+        System.out.println(palabraPolindroma(palabra));
     }
-    
-    public static void palabraPolindroma(String palabra){
-        boolean pol = false;
-        for(int i = 0;i<palabra.length();i++){
-           for(int j = 0;j<palabra.lastIndexOf(j);j--){
-               System.out.println(palabra.charAt(j) );
+    public static boolean palabraPolindroma(String palabra){
+        int fin = palabra.length()-1;
+        for(int i = 0;i<palabra.length();i++,fin--){
+           if(palabra.charAt(i)!=palabra.charAt(fin)){
+              return false;
            }
         }
+        return true;
     }
 }
