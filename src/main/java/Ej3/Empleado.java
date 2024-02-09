@@ -20,7 +20,7 @@ public class Empleado extends Persona {
         super();
     }
 
-    public void aumentarSalario(double sal){
+    protected void aumentarSalario(double sal){
         this.salario+=sal;
     }
     

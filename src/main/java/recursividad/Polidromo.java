@@ -22,4 +22,6 @@ public class Polidromo {
         }
         return true;
     }
+    //metodo recursivo
+    
 }
