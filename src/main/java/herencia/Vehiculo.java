@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  * @author aiman
  */
-public class Vehiculo {
+public abstract class Vehiculo {
     private String matricula;
     private String bastidor;
     private String marca;
@@ -107,5 +107,5 @@ public class Vehiculo {
     protected void descontarTarifa(double cantidad){
         this.tarifa-=cantidad;
     }
-    
+    public abstract void pasarItv();
 }

@@ -21,7 +21,7 @@ public class EjClase {
         System.out.println("Map con sus valores y el numero de repeticiones"+contarRepeticiones(num));
         System.out.println("Lista sin duplicados: "+listaSinDup(num));
         ArrayList<Integer> lista = listaSinDup(num);
-        System.out.println("Búsqueda Array: "+busquedaArrayList(lista, 10,contador));
+        System.out.println("Búsqueda posicion   : "+busquedaArrayList(lista, 10,contador));
     }
     //A) Estructura de dato que indique , para cada nº cuantas veces se repite
     public static Map<Integer, Integer> contarRepeticiones(int[] numeros) {
@@ -76,9 +76,7 @@ public class EjClase {
             }else{
                return contador;
             }
-        }else{
-            contador = -1;
         }
-        return contador;
+        return -1;
     }
 }
