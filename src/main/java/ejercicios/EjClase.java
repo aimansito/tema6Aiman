@@ -72,7 +72,7 @@ public class EjClase {
     public static int busquedaArrayList(ArrayList<Integer> numeros,int num,int contador){
         if(numeros.size()>contador){
             if(numeros.get(contador)!=num){
-                return busquedaArrayList(numeros, num,contador+1);
+               return busquedaArrayList(numeros, num,contador+1);
             }else{
                return contador;
             }
