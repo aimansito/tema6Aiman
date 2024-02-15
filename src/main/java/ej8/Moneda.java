@@ -17,8 +17,6 @@ public class Moneda extends Azar{
     public Moneda(int posibilidades) {
         super(posibilidades);
     }
-    
-    
     @Override
     public int lanzar() {
         return random.nextInt(1,posibilidades); 

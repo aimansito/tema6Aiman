@@ -4,20 +4,22 @@
  */
 package ej12;
 
+import org.apache.commons.lang3.RandomStringUtils;
+
 /**
  *
  * @author aiman
  */
 public class Cuenta {
+    
     private String numeroCuenta;
     private double saldo;
     private Persona cliente;
 
-    public Cuenta(String numeroCuenta, double saldo, Persona cliente) {
-        this.numeroCuenta = numeroCuenta;
-        this.saldo = saldo;
+    public Cuenta(Persona cliente) {
+        this.numeroCuenta = RandomStringUtils.random(20) ;
+        this.saldo = 0;
         this.cliente = cliente;
     }
-    
     
 }
