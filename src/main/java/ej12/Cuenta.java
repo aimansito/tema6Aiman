@@ -8,29 +8,26 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 /**
  *
- * @author aiman
+ * @author samuel
  */
-public class Cuenta {
-    
-    private String numeroCuenta;
+public abstract class Cuenta {
+
+    private String numCuenta;
     private double saldo;
     private Persona cliente;
 
     public Cuenta(Persona cliente) {
-        this.numeroCuenta = RandomStringUtils.random(20) ;
+        this.numCuenta = RandomStringUtils.randomNumeric(20);
         this.saldo = 0;
         this.cliente = cliente;
     }
 
-    public Cuenta() {
+    public String getNumCuenta() {
+        return numCuenta;
     }
 
-    public String getNumeroCuenta() {
-        return numeroCuenta;
-    }
-
-    public void setNumeroCuenta(String numeroCuenta) {
-        this.numeroCuenta = numeroCuenta;
+    public void setNumCuenta(String numCuenta) {
+        this.numCuenta = numCuenta;
     }
 
     public double getSaldo() {
@@ -53,11 +50,15 @@ public class Cuenta {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Cuenta{");
-        sb.append("numeroCuenta=").append(numeroCuenta);
+        sb.append("numCuenta=").append(numCuenta);
         sb.append(", saldo=").append(saldo);
         sb.append(", cliente=").append(cliente);
         sb.append('}');
         return sb.toString();
     }
-    
+
+    public abstract void actualizarSaldo();
+
+    public abstract void retirarSaldo(double cantidad);
+
 }
