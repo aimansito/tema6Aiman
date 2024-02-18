@@ -6,7 +6,7 @@ package ej12;
 
 /**
  *
- * @author sajm <sjimmaz322 at sjimmaz322@g.educaand.es>
+ * @author aiman
  */
 public class CuentaCorriente extends Cuenta {
 

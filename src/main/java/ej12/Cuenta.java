@@ -8,7 +8,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 /**
  *
- * @author samuel
+ * @author aiman
  */
 public abstract class Cuenta {
 

@@ -6,7 +6,7 @@ package ej12;
 
 /**
  *
- * @author samuel
+ * @author aiman
  */
 public record Persona(String nombre, String apellido, String nif) {
 
