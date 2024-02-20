@@ -8,7 +8,7 @@ package ej15;
  *
  * @author aiman
  */
-public class Persona {
+public class Persona implements Comparable<Persona>{
     private String nombre;
     private String nif;
     private int edad;
@@ -57,5 +57,8 @@ public class Persona {
         return sb.toString();
     }
     
-    
+    @Override
+    public int compareTo(Persona o) {
+        return this.nombre.compareToIgnoreCase(o.nombre);
+    }
 }

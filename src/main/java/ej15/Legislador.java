@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  * @author aiman
  */
-public abstract class Legislador extends Persona {
+public  class Legislador extends Persona {
     private String provinciaQueRepresenta;
     private String partidoPolitico;
 
@@ -75,6 +75,4 @@ public abstract class Legislador extends Persona {
         sb.append('}');
         return sb.toString();
     }
-    
-    public abstract String getCamaraEnqueTrabaja();
 }

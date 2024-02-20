@@ -8,7 +8,7 @@ package ej15;
  *
  * @author aiman
  */
-public class Diputado extends Legislador {
+public class Diputado extends Legislador implements Camara{
     private int numAsiento;
 
     public Diputado(int numAsiento,String provinciaQueRepresenta, String partidoPolitico, String nombre, String nif, int edad) {
@@ -35,12 +35,9 @@ public class Diputado extends Legislador {
         sb.append('}');
         return sb.toString();
     }
-    
     @Override
-    public String getCamaraEnqueTrabaja() {
-        String puesto = "Soy diputado";
-        
-        return puesto;
+    public String  getCamaraEnQueTrabaja() {
+        return "Congreso";
     }
     
 }

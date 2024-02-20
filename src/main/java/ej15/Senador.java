@@ -8,7 +8,7 @@ package ej15;
  *
  * @author aiman
  */
-public class Senador extends Legislador {
+public class Senador extends Legislador implements Camara{
     private double salarioExtra;
 
     public Senador(double salarioExtra, String provinciaQueRepresenta, String partidoPolitico, String nombre, String nif, int edad) {
@@ -29,15 +29,14 @@ public class Senador extends Legislador {
         StringBuilder sb = new StringBuilder();
         sb.append("Senador{");
         sb.append("salarioExtra=").append(salarioExtra);
+        sb.append("Nombre: ").append(super.getNombre());
+        sb.append("Edad: ").append(super.getEdad());
         sb.append('}');
         return sb.toString();
     }
 
-    
     @Override
-    public String getCamaraEnqueTrabaja() {
-        String puesto = "Soy senador";
-        
-        return puesto;
+    public String getCamaraEnQueTrabaja() {
+       return "Senador";
     }
 }

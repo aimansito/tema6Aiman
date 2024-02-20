@@ -13,12 +13,17 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ArrayList<Legislador> lista = new ArrayList<>();
+        ArrayList<Camara> camara = new ArrayList<>();
         
-        lista.add(new Diputado(4,"Málaga","PP","Aiman","324",20));
-        lista.add(new Senador(30.0,"Granada","PSOE","Jose","3242",23));
+        camara.add(new Diputado(4,"Málaga","PP","Aiman","324",20));
+        camara.add(new Senador(30.0,"Granada","PSOE","Jose","3242",23));
         
-        for(Legislador legislador : lista){
-            System.out.println(legislador.getCamaraEnqueTrabaja());
+//        for(Legislador legislador : lista){
+//            System.out.println(legislador.getCamaraEnqueTrabaja());
+//        }
+
+        for(Camara var : camara ){
+            System.out.println(var.getCamaraEnQueTrabaja());
         }
     }
 }
