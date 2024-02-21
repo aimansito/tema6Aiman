@@ -1,7 +1,9 @@
-interfaces/Terrestres.class
-interfaces/Animal.class
-interfaces/Acuaticos.class
-ej15/Camara.class
-interfaces/Depredador.class
-ej15/Alcalde.class
-interfaces/Main.class
+interfaces\Depredador.class
+ej15\Camara.class
+interfaces\Main.class
+interfaces\Acuaticos.class
+interfaces\Animal.class
+ej15\Alcalde.class
+interfaces\Terrestres.class
+videojuegos\Main.class
+videojuegos\Videojuegos.class
