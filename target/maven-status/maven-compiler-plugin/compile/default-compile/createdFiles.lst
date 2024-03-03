@@ -1,9 +1,14 @@
 interfaces\Depredador.class
+ejercicios_recursividad\RecorrerArray.class
+ejercicios_recursividad\PotenciaSuma.class
 ej15\Camara.class
+ejercicios_recursividad\SumaDigito.class
 interfaces\Main.class
 interfaces\Acuaticos.class
 interfaces\Animal.class
 ej15\Alcalde.class
+ejercicios_recursividad\InvertirArray.class
+ejercicios_recursividad\Suma.class
 interfaces\Terrestres.class
 videojuegos\Main.class
 videojuegos\Videojuegos.class
