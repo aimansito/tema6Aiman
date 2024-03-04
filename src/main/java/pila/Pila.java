@@ -16,7 +16,7 @@ public class Pila {
 
     public Pila(int valorMax) {
         this.palabras = new ArrayList<>();
-        this.valorMax = valorMax;
+            this.valorMax = valorMax;
     }
     
     public boolean añadirElemento(String palabra){
