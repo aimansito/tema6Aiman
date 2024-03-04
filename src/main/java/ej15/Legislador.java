@@ -72,6 +72,7 @@ public  class Legislador extends Persona {
         sb.append("provinciaQueRepresenta=").append(provinciaQueRepresenta);
         sb.append(", partidoPolitico=").append(partidoPolitico);
         sb.append("Super: ").append(super.toString());
+        sb.append(getNombre());
         sb.append('}');
         return sb.toString();
     }

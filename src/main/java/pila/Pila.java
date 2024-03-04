@@ -16,17 +16,13 @@ public class Pila {
 
     public Pila(int valorMax) {
         this.palabras = new ArrayList<>();
-            this.valorMax = valorMax;
+        this.valorMax = valorMax;
     }
     
-    public boolean añadirElemento(String palabra){
-        boolean valido = true;
-        if(this.palabras.size()+2>this.valorMax){
-            valido=false;
-        }else{
+    public void añadirElemento(String palabra){
+        if(!(this.palabras.size()+2>this.valorMax)){
             this.palabras.add(palabra);
         }
-        return valido;
     }
     public void mostrarLista(){
         for(String st : palabras){

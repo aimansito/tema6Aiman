@@ -10,7 +10,7 @@ package pila;
  */
 public class Main {
     public static void main(String[] args) {
-        Pila p = new Pila(1);
+        Pila p = new Pila(2);
         
         String p1 = "Aiman";
         String p2 = "Victoria";
