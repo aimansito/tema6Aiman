@@ -16,10 +16,16 @@ public class Main {
         String p2 = "Victoria";
         String p3 = "Noelia";
         
+        
+        
         p.añadirElemento(p1);
         p.añadirElemento(p2);
         p.añadirElemento(p3);
+        p.sacarElemento();
         
         p.mostrarLista();
+        
+        System.out.println( p.saberSiEstaLlena());
+        System.out.println(p.saberSiEstaVacia());
     }
 }

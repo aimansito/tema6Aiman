@@ -10,25 +10,25 @@ import java.util.ArrayList;
  *
  * @author aiman
  */
-public class Pila {
-    private ArrayList<String> palabras; 
+public class PilaGenerico<T> {
+    private ArrayList<T> palabras; 
     private final int valorMax;
 
-    public Pila(int valorMax) {
+    public PilaGenerico(int valorMax) {
         this.palabras = new ArrayList<>();
         this.valorMax = valorMax;
     }
     
-    public void añadirElemento(String palabra){
+    public void añadirElemento(T palabra){
         if(!(this.palabras.size()+2>this.valorMax)){
             this.palabras.add(palabra);
         }
     }
-    public String sacarElemento(){
+    public T sacarElemento(){
         if(!(palabras.isEmpty())){
             return palabras.remove(palabras.size()-1);
         }else{
-            return "";
+            return null;
         }
     }
     public boolean saberSiEstaVacia(){
@@ -42,7 +42,7 @@ public class Pila {
         }
     }
     public void mostrarLista(){
-        for(String st : palabras){
+        for(T st : palabras){
             System.out.println(st);
         }
     }
@@ -56,5 +56,4 @@ public class Pila {
         sb.append('}');
         return sb.toString();
     }
-    
 }
