@@ -19,31 +19,11 @@ public class Pila {
         this.valorMax = valorMax;
     }
     
-    public void añadirElemento(String palabra){
-        if(!(this.palabras.size()+2>this.valorMax)){
-            this.palabras.add(palabra);
-        }
-    }
     public String sacarElemento(){
         if(!(palabras.isEmpty())){
             return palabras.remove(palabras.size()-1);
         }else{
             return "";
-        }
-    }
-    public boolean saberSiEstaVacia(){
-        return palabras.isEmpty();
-    }
-    public boolean saberSiEstaLlena(){
-        if(palabras.size()==valorMax){
-            return true;
-        }else{
-            return false;
-        }
-    }
-    public void mostrarLista(){
-        for(String st : palabras){
-            System.out.println(st);
         }
     }
 

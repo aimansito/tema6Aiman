@@ -10,50 +10,35 @@ import java.util.ArrayList;
  *
  * @author aiman
  */
-public class PilaGenerico<T> {
-    private ArrayList<T> palabras; 
-    private final int valorMax;
+public class PilaGenerico<T> extends PilaCola<T> {
 
     public PilaGenerico(int valorMax) {
-        this.palabras = new ArrayList<>();
-        this.valorMax = valorMax;
+        super(valorMax);
     }
-    
-    public void añadirElemento(T palabra){
-        if(!(this.palabras.size()+2>this.valorMax)){
-            this.palabras.add(palabra);
-        }
-    }
-    public T sacarElemento(){
-        if(!(palabras.isEmpty())){
-            return palabras.remove(palabras.size()-1);
-        }else{
-            return null;
-        }
-    }
-    public boolean saberSiEstaVacia(){
-        return palabras.isEmpty();
-    }
-    public boolean saberSiEstaLlena(){
-        if(palabras.size()==valorMax){
-            return true;
-        }else{
-            return false;
-        }
-    }
-    public void mostrarLista(){
-        for(T st : palabras){
-            System.out.println(st);
-        }
-    }
+//    public T sacarElemento(){
+//        if(!(palabras.isEmpty())){
+//            return palabras.remove(palabras.size()-1);
+//        }else{
+//            return null;
+//        }
+//    }
+
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Pila{");
-        sb.append("palabras=").append(palabras);
-        sb.append(", valorMax=").append(valorMax);
+        sb.append(super.toString());
         sb.append('}');
         return sb.toString();
+    }
+
+    @Override
+    public T sacarElemento() {
+        if (!(palabras.isEmpty())) {
+            return palabras.remove(palabras.size() - 1);
+        } else {
+            return null;
+        }
     }
 }
